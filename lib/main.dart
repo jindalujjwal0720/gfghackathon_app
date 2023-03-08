@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gfghackathon_app/presentation/pages/temp_page.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
