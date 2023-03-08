@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gfghackathon_app/presentation/pages/temp_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Text("Hello World"),
+      home: const TempPage(),
     );
   }
 }
