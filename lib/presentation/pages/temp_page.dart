@@ -10,6 +10,7 @@ class TempPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Testing Page"),
       ),
+      backgroundColor: const Color(0xfff6f7f8),
       body: const SingleChildScrollView(
         child: Column(
           children: [
