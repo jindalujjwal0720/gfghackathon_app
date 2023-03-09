@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:gfghackathon_app/data/providers/doctors_provider.dart';
-import 'package:gfghackathon_app/presentation/components/temp_component.dart';
+import 'package:gfghackathon_app/presentation/components/doctors_list.dart';
 
 class TempPage extends StatelessWidget {
   const TempPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
-      future: getDoctorsData(),
-      builder: (context, snapshot) {
-        if (snapshot.hasData) {
-          return const Column(
-            children: [
-              TempWidget(),
-            ],
-          );
-        }
-        return const CircularProgressIndicator();
-      },
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Testing Page"),
+      ),
+      body: const SingleChildScrollView(
+        child: Column(
+          children: [
+            DoctorsList(),
+          ],
+        ),
+      ),
     );
   }
 }
