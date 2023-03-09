@@ -6,5 +6,6 @@ Future<List<DoctorModel>> getDoctorsData() async {
   // returning mock data for now
   List<DoctorModel> doctorsList = [];
   doctorsList = doctorsData.map((obj) => DoctorModel.fromMap(obj)).toList();
+  await Future.delayed(const Duration(seconds: 1));
   return doctorsList;
 }
