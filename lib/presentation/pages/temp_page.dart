@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gfghackathon_app/presentation/components/doctors_list.dart';
+import 'package:gfghackathon_app/presentation/components/news_list.dart';
 
 class TempPage extends StatelessWidget {
   const TempPage({super.key});
@@ -14,7 +15,8 @@ class TempPage extends StatelessWidget {
       body: const SingleChildScrollView(
         child: Column(
           children: [
-            DoctorsList(),
+            // DoctorsList(),
+            NewsList(),
           ],
         ),
       ),
