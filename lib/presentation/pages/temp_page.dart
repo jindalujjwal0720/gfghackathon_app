@@ -14,6 +14,7 @@ class TempPage extends StatelessWidget {
       backgroundColor: const Color(0xfff6f7f8),
       body: const SingleChildScrollView(
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             // DoctorsList(),
             NewsList(),

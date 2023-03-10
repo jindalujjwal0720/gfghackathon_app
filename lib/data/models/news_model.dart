@@ -1,66 +1,86 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
-
 import 'package:equatable/equatable.dart';
 
 class NewsModel extends Equatable {
   final String id;
-  final String headline;
-  final String url;
-  final String imageUrl;
-  final String content;
+  final String title;
+  final String author;
+  final String publishedDate;
+  final String link;
+  final String excerpt;
+  final String summary;
+  final String imageURL;
   const NewsModel({
     required this.id,
-    required this.headline,
-    required this.url,
-    required this.imageUrl,
-    required this.content,
+    required this.title,
+    required this.author,
+    required this.publishedDate,
+    required this.link,
+    required this.excerpt,
+    required this.summary,
+    required this.imageURL,
   });
 
   @override
   List<Object> get props {
     return [
       id,
-      headline,
-      url,
-      imageUrl,
-      content,
+      title,
+      author,
+      publishedDate,
+      link,
+      excerpt,
+      summary,
+      imageURL,
     ];
   }
 
   NewsModel copyWith({
     String? id,
-    String? headline,
-    String? url,
-    String? imageUrl,
-    String? content,
+    String? title,
+    String? author,
+    String? publishedDate,
+    String? link,
+    String? excerpt,
+    String? summary,
+    String? imageURL,
   }) {
     return NewsModel(
       id: id ?? this.id,
-      headline: headline ?? this.headline,
-      url: url ?? this.url,
-     imageUrl: imageUrl ?? this.imageUrl,
-      content: content ?? this.content,
+      title: title ?? this.title,
+      author: author ?? this.author,
+      publishedDate: publishedDate ?? this.publishedDate,
+      link: link ?? this.link,
+      excerpt: excerpt ?? this.excerpt,
+      summary: summary ?? this.summary,
+      imageURL: imageURL ?? this.imageURL,
     );
   }
 
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
-      'author': id,
-      'title': headline,
-      'imageUrl': imageUrl,
-      'url': url,
-      'cnt': content,
+      '_id': id,
+      'title': title,
+      'author': author,
+      'published_date': publishedDate,
+      'link': link,
+      'excerpt': excerpt,
+      'summary': summary,
+      'media': imageURL,
     };
   }
 
   factory NewsModel.fromMap(Map<String, dynamic> map) {
     return NewsModel(
-      id: map['author'] as String,
-      headline : map['title'] as String,
-      url: map['url'] as String,
-      imageUrl: map['imageUrl'] as String,
-     content: map['cnt'] as String,
+      id: map['_id'] as String,
+      title: map['title'] as String,
+      author: map['author'] as String,
+      publishedDate: map['published_date'] as String,
+      link: map['link'] as String,
+      excerpt: map['excerpt'] as String,
+      summary: map['summary'] as String,
+      imageURL: map['media'] as String,
     );
   }
 
