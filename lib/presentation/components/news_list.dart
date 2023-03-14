@@ -16,19 +16,46 @@ class NewsList extends StatelessWidget {
         if (snapshot.hasData) {
           return Column(
             mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              const Padding(
+                padding: EdgeInsets.only(
+                  top: 16.0,
+                  left: 16.0,
+                ),
+                child: Text(
+                  "Headlines",
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xff424d57),
+                  ),
+                ),
+              ),
               // Horizontal list
               SizedBox(
                 height: 320,
                 child: ListView.builder(
                   itemCount: 4,
                   shrinkWrap: true,
+                  physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     NewsModel news = snapshot.data![index];
                     // design the horizontal list tile
                     return newsHeadlineTile(news);
                   },
+                ),
+              ),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 16.0),
+                child: Text(
+                  "Latest",
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xff424d57),
+                  ),
                 ),
               ),
               // Vertical List
@@ -62,6 +89,25 @@ class NewsList extends StatelessWidget {
                 child: Image.network(
                   news.imageURL,
                   fit: BoxFit.cover,
+                  errorBuilder: (context, error, stackTrace) {
+                    return Container(
+                      width: 80.0,
+                      height: 80.0,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8.0),
+                        color: const Color(0xffe5e8eb),
+                      ),
+                      child: const Center(
+                        child: Text(
+                          "No Image",
+                          style: TextStyle(
+                            color: Colors.red,
+                            fontSize: 12.0,
+                          ),
+                        ),
+                      ),
+                    );
+                  },
                 ),
               ),
             ),

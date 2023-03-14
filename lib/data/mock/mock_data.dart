@@ -562,58 +562,6 @@ final newsData = {
       "_id": "91dfdcb15dda8a8027b15764f4d073aa"
     },
     {
-      "title":
-          "Women's Day: Achieve access for women to digital innovations, says WHO",
-      "author": "ANI",
-      "published_date": "2023-03-08 01:39:00",
-      "published_date_precision": "full",
-      "link":
-          "https://www.business-standard.com/article/international/women-s-day-achieve-access-for-women-to-digital-innovations-says-who-123030800049_1.html",
-      "clean_url": "business-standard.com",
-      "excerpt":
-          "On International Women's Day, WHO is calling for action in the South-East Asia Region and across the world to ensure every woman and girl, everywhere has timely and equitable access to innovations",
-      "summary":
-          "On \nInternational\n Women's Day, WHO is calling for intensified action in the South-East Asia Region and across the world to ensure that every woman and girl, everywhere has timely and equitable access to digital innovations and technologies that can protect, promote and support health and well-being, and accelerate gender equality,\" said, Dr Poonam Khetrapal Singh, WHO Regional Director for South-East Asia.\n \n \"For both women and men, digital innovations and technologies hold immense potential to increase access to essential health services and to improve health and well-being.",
-      "rights": "business-standard.com",
-      "rank": 1298,
-      "topic": "news",
-      "country": "IN",
-      "language": "en",
-      "authors": "ANI",
-      "media":
-          "https://bsmedia.business-standard.com/_media/bs/img/article/2020-07/12/full/1594529872-4234.jpg",
-      "is_opinion": false,
-      "twitter_account": "@bsindia",
-      "_score": 5.66073,
-      "_id": "818bcb40305fee0dd04c7b1253e5150e"
-    },
-    {
-      "title":
-          "Need equitable access to digital innovations for women, girls: WHO",
-      "author": "Press Trust",
-      "published_date": "2023-03-07 16:33:00",
-      "published_date_precision": "full",
-      "link":
-          "https://www.business-standard.com/article/current-affairs/need-equitable-access-to-digital-innovations-for-women-girls-who-123030700947_1.html",
-      "clean_url": "business-standard.com",
-      "excerpt":
-          "On the eve of International Women's Day on Tuesday, the WHO called for intensified action in Southeast Asia and the rest of the world to ensure that every woman and girl has equitable access to…",
-      "summary":
-          "On the eve of International Women's Day on Tuesday, the WHO called for intensified action in Southeast Asia and the rest of the world to ensure that every woman and girl has equitable access to digital innovations that can support health and well-being.\n \n For both women and men, digital innovations and technologies hold immense potential to increase access to essential health services and improve health and well-being, said Poonam Khetrapal Singh, World Health Organisation's Regional Director for South-East Asia.",
-      "rights": "business-standard.com",
-      "rank": 1298,
-      "topic": "news",
-      "country": "IN",
-      "language": "en",
-      "authors": "Press Trust",
-      "media":
-          "https://bsmedia.business-standard.com/_media/bs/img/article/default/1230307/full-123030700947.jpg",
-      "is_opinion": false,
-      "twitter_account": "@bsindia",
-      "_score": 5.640167,
-      "_id": "840c04d9f4c1ca127ce4ebe9f7304441"
-    },
-    {
       "title": "Family violence is literally making us sicker",
       "author": "ET HealthWorld",
       "published_date": "2023-03-04 11:50:00",

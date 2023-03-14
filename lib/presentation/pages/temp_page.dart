@@ -13,6 +13,7 @@ class TempPage extends StatelessWidget {
       ),
       backgroundColor: const Color(0xfff6f7f8),
       body: const SingleChildScrollView(
+        physics: BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
