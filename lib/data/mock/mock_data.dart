@@ -1,222 +1,203 @@
 final List doctorsData = [
   {
-    "id": "01GV5ZVKFWQHWDB40AG93YKS6Q",
-    "name": "Maryjane Haylett",
-    "speciality": "Social Worker",
-    "workingArea": "Mylan Institutional LLC",
-    "pricePerAppointment": 262,
-    "profileImageURL":
-        "https://robohash.org/voluptatemnonest.png?size=50x50&set=set1",
+    "id": "01GVSSYK43R04CWSKFM4K3GDSY",
+    "name": "Rosalyn Attow",
+    "speciality": "Dermatologist",
+    "workingArea": "Amerisource Bergen",
+    "pricePerAppointment": 693,
+    "profileImageURL": "https://source.unsplash.com/random/600x400/?doctor",
     "gender": "Female",
-    "rating": 4.9
+    "rating": 2.2
   },
   {
-    "id": "01GV5ZVKG2CTXRET2Y5R4035Q4",
-    "name": "Raymond Rubrow",
-    "speciality": "Teacher",
-    "workingArea": "The Mentholatum Company",
-    "pricePerAppointment": 780,
-    "profileImageURL":
-        "https://robohash.org/consequaturnihilaliquam.png?size=50x50&set=set1",
-    "gender": "Male",
-    "rating": 3.8
+    "id": "01GVSSYK48Z79VYJS8TJHDG3T8",
+    "name": "Betsey Mundle",
+    "speciality": "Sports Medicine Specialist",
+    "workingArea": "Mckesson (Sunmark)",
+    "pricePerAppointment": 758,
+    "profileImageURL": "https://source.unsplash.com/random/600x600/?doctor",
+    "gender": "Female",
+    "rating": 2.9
   },
   {
-    "id": "01GV5ZVKG7EQ4GWQ35W88XB6TE",
-    "name": "Shelli Geratt",
-    "speciality": "Teacher",
-    "workingArea": "Walgreen Company",
-    "pricePerAppointment": 301,
-    "profileImageURL":
-        "https://robohash.org/quisquamrepellatad.png?size=50x50&set=set1",
+    "id": "01GVSSYK4CH7XV32Y67VWMY3GC",
+    "name": "Doyle Desouza",
+    "speciality": "Critical Care Medicine Specialist",
+    "workingArea": "Sandoz Inc",
+    "pricePerAppointment": 430,
+    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
+    "gender": "Agender",
+    "rating": 5.0
+  },
+  {
+    "id": "01GVSSYK4GG568XZCYV1JRBAKA",
+    "name": "Drucy Backshaw",
+    "speciality": "Plastic Surgeon",
+    "workingArea": "Lake Erie Medical DBA Quality Care Products LLC",
+    "pricePerAppointment": 589,
+    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
     "gender": "Female",
     "rating": 3.0
   },
   {
-    "id": "01GV5ZVKGCVR81KVAK09ASH6QP",
-    "name": "Neala Clynter",
-    "speciality": "Executive Secretary",
-    "workingArea": "ALK-Abello, Inc.",
-    "pricePerAppointment": 960,
-    "profileImageURL":
-        "https://robohash.org/quiasimiliquecommodi.png?size=50x50&set=set1",
-    "gender": "Female",
-    "rating": 2.1
+    "id": "01GVSSYK4J1JQ2QEK7N62CJJNW",
+    "name": "Maje Rickis",
+    "speciality": "",
+    "workingArea": "Galderma Laboratories, L.P.",
+    "pricePerAppointment": 263,
+    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
+    "gender": "Male",
+    "rating": 4.7
   },
   {
-    "id": "01GV5ZVKGH2XHVYJ4EQKGD6J22",
-    "name": "Kennan Valentino",
-    "speciality": "VP Product Management",
-    "workingArea": "Chain Drug Consortium",
-    "pricePerAppointment": 606,
-    "profileImageURL":
-        "https://robohash.org/utrecusandaeet.png?size=50x50&set=set1",
-    "gender": "Male",
+    "id": "01GVSSYK4NHY7HRHH18Y43DKQA",
+    "name": "Pauline Powder",
+    "speciality": "Psychiatrist",
+    "workingArea": "Aton Pharma, Inc.",
+    "pricePerAppointment": 324,
+    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
+    "gender": "Female",
+    "rating": 4.9
+  },
+  {
+    "id": "01GVSSYK4PRBGZBJKDBHCEAZDP",
+    "name": "Ag Aseef",
+    "speciality": "Plastic Surgeon",
+    "workingArea": "Uriel Pharmacy Inc.",
+    "pricePerAppointment": 809,
+    "profileImageURL": "https://source.unsplash.com/random/300x300/?doctor",
+    "gender": "Female",
     "rating": 2.3
   },
   {
-    "id": "01GV5ZVKGPR62G99A9AAA0H47B",
-    "name": "Rab Gaskins",
-    "speciality": "Food Chemist",
-    "workingArea": "Cardinal Health",
-    "pricePerAppointment": 501,
-    "profileImageURL":
-        "https://robohash.org/expeditalaborumvoluptatem.png?size=50x50&set=set1",
-    "gender": "Male",
-    "rating": 3.2
-  },
-  {
-    "id": "01GV5ZVKGVXCE2GK2ZAGS0WZXK",
-    "name": "Ruperta McLeese",
-    "speciality": "Biostatistician III",
-    "workingArea": "Happy Sonic Global Co., Ltd.",
-    "pricePerAppointment": 275,
-    "profileImageURL":
-        "https://robohash.org/oditconsequunturnostrum.png?size=50x50&set=set1",
+    "id": "01GVSSYK4SM2C49W8PSS5GP1PE",
+    "name": "Dotty Tremblay",
+    "speciality": "Psychiatrist",
+    "workingArea": "Physicians Total Care, Inc.",
+    "pricePerAppointment": 355,
+    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
     "gender": "Female",
-    "rating": 4.2
+    "rating": 4.3
   },
   {
-    "id": "01GV5ZVKH0G04101MTE9P8C5HN",
-    "name": "Cyndy Godon",
-    "speciality": "Database Administrator IV",
-    "workingArea": "Topco Associates LLC",
-    "pricePerAppointment": 731,
-    "profileImageURL":
-        "https://robohash.org/maioresautemsunt.png?size=50x50&set=set1",
+    "id": "01GVSSYK4V64H3B5M4G5T9NKZ9",
+    "name": "Debbie Cristofanini",
+    "speciality": "Critical Care Medicine Specialist",
+    "workingArea": "Amerisource Bergen",
+    "pricePerAppointment": 947,
+    "profileImageURL": "https://source.unsplash.com/random/600x400/?doctor",
     "gender": "Female",
-    "rating": 3.2
+    "rating": 4.6
   },
   {
-    "id": "01GV5ZVKH4EWCXRY3B90QX9YZM",
-    "name": "Purcell Janda",
-    "speciality": "Administrative Assistant III",
-    "workingArea": "Nelco Laboratories, Inc.",
-    "pricePerAppointment": 482,
-    "profileImageURL": "https://robohash.org/adillumet.png?size=50x50&set=set1",
-    "gender": "Male",
-    "rating": 2.3
-  },
-  {
-    "id": "01GV5ZVKH8FBQS1REWVB8DY9AY",
-    "name": "Mycah MacGuffie",
-    "speciality": "Geological Engineer",
-    "workingArea": "Kinray",
-    "pricePerAppointment": 386,
-    "profileImageURL":
-        "https://robohash.org/velitquidemminus.png?size=50x50&set=set1",
+    "id": "01GVSSYK4X5FETRTZP0WC5R4YE",
+    "name": "Linoel Solley",
+    "speciality": "",
+    "workingArea": "Bryant Ranch Prepack",
+    "pricePerAppointment": 796,
+    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
     "gender": "Male",
     "rating": 3.3
   },
   {
-    "id": "01GV5ZVKHCMEADCHXVC3MBWRFP",
-    "name": "Anselm Shark",
-    "speciality": "Senior Quality Engineer",
-    "workingArea": "Natural Health Supply",
-    "pricePerAppointment": 760,
-    "profileImageURL":
-        "https://robohash.org/quasquameius.png?size=50x50&set=set1",
+    "id": "01GVSSYK50QV5CZCBRCM8KH14S",
+    "name": "Anton Hanigan",
+    "speciality": "Emergency Medicine Specialist",
+    "workingArea": "GlaxoSmithKline Consumer Healthcare LP",
+    "pricePerAppointment": 293,
+    "profileImageURL": "https://source.unsplash.com/random/500x500/?doctor",
     "gender": "Male",
-    "rating": 4.9
+    "rating": 2.3
   },
   {
-    "id": "01GV5ZVKHHF8B3R4R5E8RFE9RZ",
-    "name": "Currie Fewlass",
-    "speciality": "Help Desk Operator",
-    "workingArea": "ALK-Abello, Inc.",
-    "pricePerAppointment": 638,
-    "profileImageURL":
-        "https://robohash.org/inventorequiodit.png?size=50x50&set=set1",
-    "gender": "Agender",
-    "rating": 3.1
-  },
-  {
-    "id": "01GV5ZVKHNE836CB2YA289SDK3",
-    "name": "Marlowe Robarts",
-    "speciality": "Budget/Accounting Analyst I",
-    "workingArea": "Laboratoires Gifrer Barbezat",
-    "pricePerAppointment": 343,
-    "profileImageURL":
-        "https://robohash.org/estcumvoluptatem.png?size=50x50&set=set1",
-    "gender": "Male",
-    "rating": 2.5
-  },
-  {
-    "id": "01GV5ZVKHSXPYRW4QWXWJ2R6ZY",
-    "name": "Giraud Thresh",
-    "speciality": "Nurse",
-    "workingArea": "State of Florida DOH Central Pharmacy",
-    "pricePerAppointment": 749,
-    "profileImageURL":
-        "https://robohash.org/etiureillum.png?size=50x50&set=set1",
+    "id": "01GVSSYK52NX5K167JGY9GWN9B",
+    "name": "Dermot Loche",
+    "speciality": "Neurologist",
+    "workingArea": "Mission Hills S.A de C.V",
+    "pricePerAppointment": 683,
+    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
     "gender": "Male",
     "rating": 4.8
   },
   {
-    "id": "01GV5ZVKHYXVZA3N53QAQY6CD0",
-    "name": "Benni Spawton",
-    "speciality": "Structural Engineer",
-    "workingArea": "Physicians Total Care, Inc.",
-    "pricePerAppointment": 254,
-    "profileImageURL":
-        "https://robohash.org/consequunturexercitationemqui.png?size=50x50&set=set1",
-    "gender": "Female",
-    "rating": 4.0
+    "id": "01GVSSYK54SBW51TVKMD2SNH35",
+    "name": "Bobbie Phateplace",
+    "speciality": "Emergency Medicine Specialist",
+    "workingArea": "Watson Laboratories, Inc.",
+    "pricePerAppointment": 520,
+    "profileImageURL": "https://source.unsplash.com/random/300x300/?doctor",
+    "gender": "Male",
+    "rating": 2.8
   },
   {
-    "id": "01GV5ZVKJ2EK0K7W4QDJX71P8J",
-    "name": "Octavius Misson",
-    "speciality": "Compensation Analyst",
-    "workingArea": "Contract Pharmacy Services-PA",
-    "pricePerAppointment": 942,
-    "profileImageURL":
-        "https://robohash.org/sitautvoluptas.png?size=50x50&set=set1",
+    "id": "01GVSSYK564KG75E8XVF3MTHY7",
+    "name": "Mikkel Elesander",
+    "speciality": "Sleep Medicine Specialist",
+    "workingArea": "CVS Pharmacy",
+    "pricePerAppointment": 638,
+    "profileImageURL": "https://source.unsplash.com/random/?doctor",
+    "gender": "Male",
+    "rating": 4.4
+  },
+  {
+    "id": "01GVSSYK58692YHWP18S04QYZD",
+    "name": "Menard Tollmache",
+    "speciality": "Family Physician",
+    "workingArea": "International Nature Nutraceuticals",
+    "pricePerAppointment": 889,
+    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
     "gender": "Male",
     "rating": 4.6
   },
   {
-    "id": "01GV5ZVKJ6SJX7EK2K44PAV5FW",
-    "name": "Jenni Ewington",
-    "speciality": "Safety Technician III",
-    "workingArea": "Blenheim Pharmacal, Inc.",
-    "pricePerAppointment": 223,
-    "profileImageURL":
-        "https://robohash.org/voluptasnumquammaiores.png?size=50x50&set=set1",
+    "id": "01GVSSYK5ABF5J8FHGKGAAXKZR",
+    "name": "Rhoda Abercromby",
+    "speciality": "Emergency Medicine Specialist",
+    "workingArea": "Family Dollar",
+    "pricePerAppointment": 412,
+    "profileImageURL": "https://source.unsplash.com/random/600x400/?doctor",
     "gender": "Female",
-    "rating": 4.2
+    "rating": 2.2
   },
   {
-    "id": "01GV5ZVKJB7MK46CDD2PM89Y4W",
-    "name": "Rowan Dwerryhouse",
-    "speciality": "Social Worker",
-    "workingArea": "Apotex Corp.",
-    "pricePerAppointment": 478,
-    "profileImageURL":
-        "https://robohash.org/autsolutaaspernatur.png?size=50x50&set=set1",
+    "id": "01GVSSYK5E1W11JH5GVY2C7EE9",
+    "name": "Shannon Spadoni",
+    "speciality": "Infectious Disease Specialist",
+    "workingArea": "L Perrigo Company",
+    "pricePerAppointment": 666,
+    "profileImageURL": "https://source.unsplash.com/random/600x400/?doctor",
+    "gender": "Bigender",
+    "rating": 3.5
+  },
+  {
+    "id": "01GVSSYK5HYRFEQKTMWCP2C6BX",
+    "name": "Jessamyn Moult",
+    "speciality": "Urologist",
+    "workingArea": "VITALIFE INC DBA TABAK'S HEALTH PRODUCTS",
+    "pricePerAppointment": 424,
+    "profileImageURL": "https://source.unsplash.com/random/600x400/?doctor",
+    "gender": "Female",
+    "rating": 4.8
+  },
+  {
+    "id": "01GVSSYK5KHD41A4MK9NGPHB1P",
+    "name": "Linoel Raun",
+    "speciality": "Allergist",
+    "workingArea": "Jubilant HollisterStier LLC",
+    "pricePerAppointment": 576,
+    "profileImageURL": "https://source.unsplash.com/random/600x400/?doctor",
     "gender": "Male",
     "rating": 3.4
   },
   {
-    "id": "01GV5ZVKJEVEASRVC8DZGJW2ND",
-    "name": "Moses Beeze",
-    "speciality": "Marketing Manager",
-    "workingArea": "American Health Packaging",
-    "pricePerAppointment": 926,
-    "profileImageURL":
-        "https://robohash.org/sequianimivoluptatum.png?size=50x50&set=set1",
-    "gender": "Male",
-    "rating": 3.3
-  },
-  {
-    "id": "01GV5ZVKJJTQ4HZAM1ANPGFEQ8",
-    "name": "Jesselyn Charopen",
-    "speciality": "Biostatistician IV",
-    "workingArea": "Cardinal Health",
-    "pricePerAppointment": 813,
-    "profileImageURL":
-        "https://robohash.org/quibusdamrepellatsed.png?size=50x50&set=set1",
+    "id": "01GVSSYK5PJ8ZXYKSREM68GR4D",
+    "name": "Angelia Matyushenko",
+    "speciality": "Urologist",
+    "workingArea": "Ecolab Inc.",
+    "pricePerAppointment": 407,
+    "profileImageURL": "https://source.unsplash.com/random/600x400/?doctor",
     "gender": "Female",
-    "rating": 3.5
+    "rating": 3.0
   }
 ];
 
