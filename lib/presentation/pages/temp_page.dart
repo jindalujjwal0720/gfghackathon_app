@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:gfghackathon_app/presentation/components/appointment_list.dart';
 import 'package:gfghackathon_app/presentation/components/doctors_list.dart';
 import 'package:gfghackathon_app/presentation/components/news_list.dart';
+import 'package:gfghackathon_app/presentation/pages/dcotor_info.dart';
 
 class TempPage extends StatelessWidget {
   const TempPage({super.key});
@@ -17,9 +19,11 @@ class TempPage extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            DoctorsList(),
+            // DoctorsList(),
             // NewsList(),
+            AppointmentList(),
           ],
+
         ),
       ),
     );
