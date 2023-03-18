@@ -17,8 +17,8 @@ class TempPage extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            // DoctorsList(),
-            NewsList(),
+            DoctorsList(),
+            // NewsList(),
           ],
         ),
       ),

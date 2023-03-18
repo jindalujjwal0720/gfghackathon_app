@@ -40,30 +40,15 @@ class DoctorsListTile extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          doctor.name,
+                          "dr. ${doctor.name}",
                           style: const TextStyle(
                             color: Color(0xff28333e),
                             fontSize: 14,
-                            fontWeight: FontWeight.w600,
+                            fontWeight: FontWeight.bold,
+
                           ),
                         ),
-                        Row(
-                          children: [
-                            Text(
-                              "${doctor.rating} ",
-                              style: const TextStyle(
-                                fontSize: 12.0,
-                                color: Color(0xff74808b),
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                            const Icon(
-                              Icons.star,
-                              size: 16.0,
-                              color: Color(0xff5d6974),
-                            ),
-                          ],
-                        )
+
                       ],
                     ),
                   ),
@@ -86,42 +71,41 @@ class DoctorsListTile extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 6.0),
-                        child: Text(
-                          "₹ ${doctor.pricePerAppointment}",
-                          style: const TextStyle(
-                            fontSize: 13.0,
-                            color: Color(0xff74808b),
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
+                      const Icon(
+                        Icons.star,
+                        size: 16.0,
+                        color: Colors.amber,
                       ),
-                      GestureDetector(
-                        child: Container(
-                          margin: const EdgeInsets.all(8.0),
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 12.0, vertical: 6.0),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8.0),
-                            color: const Color(0x0d0D47A1),
-                          ),
-                          child: const Text(
-                            "Appointment",
-                            style: TextStyle(
-                              fontSize: 12.0,
-                              color: Color(0xFF0D47A1),
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
+                    Text(
+                    "${doctor.rating} ",
+                      style: const TextStyle(
+                        fontSize: 12.0,
+                        color: Color(0xff74808b),
+                        fontWeight: FontWeight.w500,
+                      ),
+
+                    ),
+                      Text(
+                        "(19) reviews ",
+                        style: const TextStyle(
+                          fontSize: 12.0,
+                          color: Color(0xff74808b),
+                          fontWeight: FontWeight.w500,
                         ),
-                      )
-                    ],
-                  )
+
+                      ),
+
                 ],
+                ),
+                  )
+
+                    ],
               ),
             ),
           )

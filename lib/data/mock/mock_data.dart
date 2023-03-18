@@ -25,7 +25,7 @@ final List doctorsData = [
     "speciality": "Critical Care Medicine Specialist",
     "workingArea": "Sandoz Inc",
     "pricePerAppointment": 430,
-    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/450x600/?doctor",
     "gender": "Agender",
     "rating": 5.0
   },
@@ -35,7 +35,7 @@ final List doctorsData = [
     "speciality": "Plastic Surgeon",
     "workingArea": "Lake Erie Medical DBA Quality Care Products LLC",
     "pricePerAppointment": 589,
-    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/480x600/?doctor",
     "gender": "Female",
     "rating": 3.0
   },
@@ -45,7 +45,7 @@ final List doctorsData = [
     "speciality": "",
     "workingArea": "Galderma Laboratories, L.P.",
     "pricePerAppointment": 263,
-    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/420x600/?doctor",
     "gender": "Male",
     "rating": 4.7
   },
@@ -55,7 +55,7 @@ final List doctorsData = [
     "speciality": "Psychiatrist",
     "workingArea": "Aton Pharma, Inc.",
     "pricePerAppointment": 324,
-    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/300x500/?doctor",
     "gender": "Female",
     "rating": 4.9
   },
@@ -65,7 +65,7 @@ final List doctorsData = [
     "speciality": "Plastic Surgeon",
     "workingArea": "Uriel Pharmacy Inc.",
     "pricePerAppointment": 809,
-    "profileImageURL": "https://source.unsplash.com/random/300x300/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/200x200/?doctor",
     "gender": "Female",
     "rating": 2.3
   },
@@ -75,7 +75,7 @@ final List doctorsData = [
     "speciality": "Psychiatrist",
     "workingArea": "Physicians Total Care, Inc.",
     "pricePerAppointment": 355,
-    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/470x600/?doctor",
     "gender": "Female",
     "rating": 4.3
   },
@@ -85,7 +85,7 @@ final List doctorsData = [
     "speciality": "Critical Care Medicine Specialist",
     "workingArea": "Amerisource Bergen",
     "pricePerAppointment": 947,
-    "profileImageURL": "https://source.unsplash.com/random/600x400/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/700x400/?doctor",
     "gender": "Female",
     "rating": 4.6
   },
@@ -95,7 +95,7 @@ final List doctorsData = [
     "speciality": "",
     "workingArea": "Bryant Ranch Prepack",
     "pricePerAppointment": 796,
-    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/480x600/?doctor",
     "gender": "Male",
     "rating": 3.3
   },
@@ -105,7 +105,7 @@ final List doctorsData = [
     "speciality": "Emergency Medicine Specialist",
     "workingArea": "GlaxoSmithKline Consumer Healthcare LP",
     "pricePerAppointment": 293,
-    "profileImageURL": "https://source.unsplash.com/random/500x500/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/520x500/?doctor",
     "gender": "Male",
     "rating": 2.3
   },
@@ -115,7 +115,7 @@ final List doctorsData = [
     "speciality": "Neurologist",
     "workingArea": "Mission Hills S.A de C.V",
     "pricePerAppointment": 683,
-    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/500x600/?doctor",
     "gender": "Male",
     "rating": 4.8
   },
@@ -145,7 +145,7 @@ final List doctorsData = [
     "speciality": "Family Physician",
     "workingArea": "International Nature Nutraceuticals",
     "pricePerAppointment": 889,
-    "profileImageURL": "https://source.unsplash.com/random/400x600/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/300x400/?doctor",
     "gender": "Male",
     "rating": 4.6
   },
@@ -155,7 +155,7 @@ final List doctorsData = [
     "speciality": "Emergency Medicine Specialist",
     "workingArea": "Family Dollar",
     "pricePerAppointment": 412,
-    "profileImageURL": "https://source.unsplash.com/random/600x400/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/600x500/?doctor",
     "gender": "Female",
     "rating": 2.2
   },
@@ -165,7 +165,7 @@ final List doctorsData = [
     "speciality": "Infectious Disease Specialist",
     "workingArea": "L Perrigo Company",
     "pricePerAppointment": 666,
-    "profileImageURL": "https://source.unsplash.com/random/600x400/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/500x300/?doctor",
     "gender": "Bigender",
     "rating": 3.5
   },
@@ -185,7 +185,7 @@ final List doctorsData = [
     "speciality": "Allergist",
     "workingArea": "Jubilant HollisterStier LLC",
     "pricePerAppointment": 576,
-    "profileImageURL": "https://source.unsplash.com/random/600x400/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/650x400/?doctor",
     "gender": "Male",
     "rating": 3.4
   },
@@ -195,7 +195,7 @@ final List doctorsData = [
     "speciality": "Urologist",
     "workingArea": "Ecolab Inc.",
     "pricePerAppointment": 407,
-    "profileImageURL": "https://source.unsplash.com/random/600x400/?doctor",
+    "profileImageURL": "https://source.unsplash.com/random/550x400/?doctor",
     "gender": "Female",
     "rating": 3.0
   }
