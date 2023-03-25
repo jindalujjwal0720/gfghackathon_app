@@ -8,10 +8,14 @@ class DoctorModel extends Equatable {
   final String name;
   final String speciality;
   final String workingArea;
-  final int pricePerAppointment;
+  final num pricePerAppointment;
   final String profileImageURL;
   final String gender;
-  final double rating;
+  final num rating;
+  final String email;
+  final String phoneNumber;
+  final String birthdate;
+  final num numberOfReviews;
   const DoctorModel({
     required this.id,
     required this.name,
@@ -21,6 +25,10 @@ class DoctorModel extends Equatable {
     required this.profileImageURL,
     required this.gender,
     required this.rating,
+    required this.email,
+    required this.phoneNumber,
+    required this.birthdate,
+    required this.numberOfReviews,
   });
 
   @override
@@ -34,6 +42,10 @@ class DoctorModel extends Equatable {
       profileImageURL,
       gender,
       rating,
+      email,
+      phoneNumber,
+      birthdate,
+      numberOfReviews,
     ];
   }
 
@@ -42,10 +54,14 @@ class DoctorModel extends Equatable {
     String? name,
     String? speciality,
     String? workingArea,
-    int? pricePerAppointment,
+    num? pricePerAppointment,
     String? profileImageURL,
     String? gender,
-    double? rating,
+    num? rating,
+    String? email,
+    String? phoneNumber,
+    String? birthdate,
+    num? numberOfReviews,
   }) {
     return DoctorModel(
       id: id ?? this.id,
@@ -56,6 +72,10 @@ class DoctorModel extends Equatable {
       profileImageURL: profileImageURL ?? this.profileImageURL,
       gender: gender ?? this.gender,
       rating: rating ?? this.rating,
+      email: email ?? this.email,
+      phoneNumber: phoneNumber ?? this.phoneNumber,
+      birthdate: birthdate ?? this.birthdate,
+      numberOfReviews: numberOfReviews ?? this.numberOfReviews,
     );
   }
 
@@ -69,19 +89,27 @@ class DoctorModel extends Equatable {
       'profileImageURL': profileImageURL,
       'gender': gender,
       'rating': rating,
+      'email': email,
+      'phoneNumber': phoneNumber,
+      'birthdate': birthdate,
+      'numberOfReviews': numberOfReviews,
     };
   }
 
   factory DoctorModel.fromMap(Map<String, dynamic> map) {
     return DoctorModel(
-      id: map['id'] as String,
+      id: "${map['id']}",
       name: map['name'] as String,
       speciality: map['speciality'] as String,
       workingArea: map['workingArea'] as String,
-      pricePerAppointment: map['pricePerAppointment'] as int,
+      pricePerAppointment: map['pricePerAppointment'] as num,
       profileImageURL: map['profileImageURL'] as String,
       gender: map['gender'] as String,
-      rating: map['rating'] as double,
+      rating: map['rating'] as num,
+      email: map['email'] as String,
+      phoneNumber: map['phoneNumber'] as String,
+      birthdate: map['birthdate'] as String,
+      numberOfReviews: map['numberOfReviews'] as num,
     );
   }
 

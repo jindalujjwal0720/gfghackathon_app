@@ -21,9 +21,8 @@ class TempPage extends StatelessWidget {
           children: [
             // DoctorsList(),
             // NewsList(),
-            AppointmentList(),
+            // AppointmentList(),
           ],
-
         ),
       ),
     );

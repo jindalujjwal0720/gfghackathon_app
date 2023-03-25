@@ -6,17 +6,19 @@ import 'package:equatable/equatable.dart';
 class AppointmentModel extends Equatable {
   final String id;
   final String doctorID;
-  final String userID;
+  final String patientID;
   final String startTime;
   final String status;
   final int duration;
+  final String symptoms;
   const AppointmentModel({
     required this.id,
     required this.doctorID,
-    required this.userID,
+    required this.patientID,
     required this.startTime,
-    required this.duration,
     required this.status,
+    required this.duration,
+    required this.symptoms,
   });
 
   @override
@@ -24,29 +26,31 @@ class AppointmentModel extends Equatable {
     return [
       id,
       doctorID,
-      userID,
+      patientID,
       startTime,
-      duration,
       status,
+      duration,
+      symptoms,
     ];
   }
 
   AppointmentModel copyWith({
     String? id,
     String? doctorID,
-    String? userID,
+    String? patientID,
     String? startTime,
     String? status,
     int? duration,
-
+    String? symptoms,
   }) {
     return AppointmentModel(
       id: id ?? this.id,
-      userID: userID ?? this.userID,
       doctorID: doctorID ?? this.doctorID,
+      patientID: patientID ?? this.patientID,
       startTime: startTime ?? this.startTime,
       status: status ?? this.status,
-      duration: duration?? this.duration,
+      duration: duration ?? this.duration,
+      symptoms: symptoms ?? this.symptoms,
     );
   }
 
@@ -54,22 +58,23 @@ class AppointmentModel extends Equatable {
     return <String, dynamic>{
       'id': id,
       'doctorID': doctorID,
-      'userID': userID,
-      'startTime':startTime,
-      'status':status,
+      'patientID': patientID,
+      'startTime': startTime,
+      'status': status,
       'duration': duration,
-
+      'symptoms': symptoms,
     };
   }
 
   factory AppointmentModel.fromMap(Map<String, dynamic> map) {
     return AppointmentModel(
       id: map['id'] as String,
-      doctorID: map['doctorID'] as String,
-      userID: map['userID'] as String,
-      status: map['status'] as String,
+      doctorID: "${map['doctorID']}",
+      patientID: "${map['patientID']}",
       startTime: map['startTime'] as String,
+      status: map['status'] as String,
       duration: map['duration'] as int,
+      symptoms: map['symptoms'] as String,
     );
   }
 
