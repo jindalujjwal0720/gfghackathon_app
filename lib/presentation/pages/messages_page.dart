@@ -2,13 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:gfghackathon_app/data/mock/mock_data.dart';
 import 'package:gfghackathon_app/data/models/chatroom_model.dart';
 import 'package:gfghackathon_app/data/models/message_model.dart';
+import 'package:gfghackathon_app/data/providers/chats_provider.dart';
 import 'package:gfghackathon_app/presentation/components/loading.dart';
 import 'package:gfghackathon_app/presentation/components/message_bubble.dart';
 import 'package:gfghackathon_app/utils/app_colors.dart';
 
-class MessagesPage extends StatelessWidget {
+class MessagesPage extends StatefulWidget {
   const MessagesPage(this.chatroom, {super.key});
   final ChatroomModel chatroom;
+
+  @override
+  State<MessagesPage> createState() => _MessagesPageState();
+}
+
+class _MessagesPageState extends State<MessagesPage> {
+  final TextEditingController messageController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +34,7 @@ class MessagesPage extends StatelessWidget {
               children: [
                 ClipOval(
                   child: Image.network(
-                    chatroom.doctorProfilePicURL,
+                    widget.chatroom.doctorProfilePicURL,
                     width: 36.0,
                     height: 36.0,
                     fit: BoxFit.cover,
@@ -35,7 +43,7 @@ class MessagesPage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(left: 16.0),
                   child: Text(
-                    "Dr. ${chatroom.doctorName}",
+                    "Dr. ${widget.chatroom.doctorName}",
                     style: const TextStyle(
                       color: AppColors.black,
                       fontWeight: FontWeight.w500,
@@ -66,22 +74,28 @@ class MessagesPage extends StatelessWidget {
         children: [
           Expanded(
             // list of messages
-            child: FutureBuilder(
-              future: Future.delayed(Duration.zero, () {
-                return chatsData.map((e) => MessageModel.fromMap(e)).toList();
-              }),
+            child: StreamBuilder(
+              stream: getAllMessages(widget.chatroom),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
+                  List<MessageModel> messages = snapshot.data!.docs
+                      .map((e) => MessageModel.fromMap({
+                            "id": e.id,
+                            ...e.data(),
+                            "timestamp":
+                                e.data()["timestamp"].toString()
+                          }))
+                      .toList();
                   return Padding(
                     padding: const EdgeInsets.all(4.0),
                     child: ListView.builder(
-                      itemCount: snapshot.data!.length,
+                      itemCount: messages.length,
                       shrinkWrap: true,
                       reverse: true,
                       physics: const BouncingScrollPhysics(),
                       itemBuilder: (context, index) => Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                        child: MessageBubble(snapshot.data![index]),
+                        child: MessageBubble(messages[index]),
                       ),
                     ),
                   );
@@ -110,8 +124,9 @@ class MessagesPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(16.0),
                         color: AppColors.white,
                       ),
-                      child: const TextField(
-                        decoration: InputDecoration(
+                      child: TextField(
+                        controller: messageController,
+                        decoration: const InputDecoration(
                           border: InputBorder.none,
                           hintText: "Type your message...",
                         ),
@@ -122,7 +137,14 @@ class MessagesPage extends StatelessWidget {
                   ),
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    if (messageController.text.isNotEmpty) {
+                      sendMessage(widget.chatroom, messageController.text);
+                      setState(() {
+                        messageController.text = "";
+                      });
+                    }
+                  },
                   icon: const Icon(
                     Icons.send_rounded,
                     color: AppColors.activeBlue,

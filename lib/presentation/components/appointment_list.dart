@@ -28,6 +28,7 @@ class AppointmentList extends StatelessWidget {
                 child: AppointmentListTile(
                   appointments[index],
                   doctorsMap[appointments[index].doctorID]!,
+                  showOptions: false,
                 ),
               ),
             );

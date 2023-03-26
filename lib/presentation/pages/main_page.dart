@@ -17,7 +17,10 @@ class _MainPageState extends State<MainPage> {
   final List<Widget> _pages = [
     const HomePage(),
     const AppointmentsPage(),
-    const ChatsPage(),
+    // Don't un-comment it, Actual firebase is connected, it will Cost READS
+    // Only un-comment if it is very much required
+    // const ChatsPage(),
+    const HomePage(),
     const HomePage(),
   ];
 

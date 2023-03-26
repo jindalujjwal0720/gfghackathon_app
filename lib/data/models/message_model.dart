@@ -40,7 +40,7 @@ class MessageModel extends Equatable {
 
   factory MessageModel.fromMap(Map<String, dynamic> map) {
     return MessageModel(
-      id: '${map['id']}',
+      id: map['id'] as String,
       sentByID: '${map['sentByID']}',
       message: map['message'] as String,
       timestamp: map['timestamp'] as String,

@@ -66,14 +66,14 @@ class ChatroomModel extends Equatable {
   factory ChatroomModel.fromMap(Map<String, dynamic> map) {
     return ChatroomModel(
       id: map['id'] as String,
-      doctorID: map['doctorID'] as String,
-      patientID: map['patientID'] as String,
+      doctorID: '${map['doctorID']}',
+      patientID: '${map['patientID']}',
       doctorName: map['doctorName'] as String,
       patientName: map['patientName'] as String,
       doctorProfilePicURL: map['doctorProfilePicURL'] as String,
       patientProfilePicURL: map['patientProfilePicURL'] as String,
       lastMessage: map['lastMessage'] as String,
-      createdAt: map['createdAt'] as String,
+      createdAt: '${map['createdAt']}',
     );
   }
 
