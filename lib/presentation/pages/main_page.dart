@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gfghackathon_app/presentation/pages/appointments_page.dart';
+import 'package:gfghackathon_app/presentation/pages/chats_page.dart';
 import 'package:gfghackathon_app/presentation/pages/homepage.dart';
 import 'package:gfghackathon_app/utils/app_colors.dart';
 
@@ -13,10 +14,10 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
 
-  List<Widget> _pages = [
+  final List<Widget> _pages = [
     const HomePage(),
     const AppointmentsPage(),
-    const HomePage(),
+    const ChatsPage(),
     const HomePage(),
   ];
 

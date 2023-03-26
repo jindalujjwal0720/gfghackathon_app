@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "484518016366",
+    "project_id": "medoi-b2b82",
+    "storage_bucket": "medoi-b2b82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484518016366:android:658bd6c6eb9209f5adbd7f",
+        "android_client_info": {
+          "package_name": "com.example.gfghackathon_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484518016366-98siek17budh3h5uofs0r6netib4ovhl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtq_la5Z5Jnse-NSaOZ0jE-Yna_P-AFAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484518016366-98siek17budh3h5uofs0r6netib4ovhl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
