@@ -61,11 +61,53 @@ class MessagesPage extends StatelessWidget {
       body: Column(
         children: [
           Expanded(
+            // list of messages
             child: Container(),
           ),
-          const Text("Hello"),
+          Container(
+            decoration: const BoxDecoration(
+              color: AppColors.background,
+            ),
+            child: Row(
+              children: [
+                Expanded(
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(
+                      maxHeight: 160.0,
+                    ),
+                    child: Container(
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 12.0, vertical: 8.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16.0),
+                        color: AppColors.white,
+                      ),
+                      child: const TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: "Type your message...",
+                        ),
+                        cursorColor: AppColors.activeBlue,
+                        maxLines: null,
+                      ),
+                    ),
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.send_rounded,
+                    color: AppColors.activeBlue,
+                    size: 20.0,
+                  ),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
   }
 }
+
