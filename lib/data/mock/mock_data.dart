@@ -1881,3 +1881,145 @@ const appointmentsData = [
     "symptoms": "muscle pain"
   }
 ];
+
+const chatsData = [
+  {
+    "id": "01GWEWH2GJ373QWFQZS61EX973",
+    "sentByID": 3,
+    "message":
+        "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+    "timestamp": "2022-10-18T08:10:28Z"
+  },
+  {
+    "id": "01GWEWH2GNVJ6GP1BTN5C61NHW",
+    "sentByID": 5,
+    "message":
+        "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
+    "timestamp": "2023-03-23T22:44:51Z"
+  },
+  {
+    "id": "01GWEWH2GQVFV0AMJH6ZBM6A46",
+    "sentByID": 3,
+    "message":
+        "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
+    "timestamp": "2022-12-19T19:55:21Z"
+  },
+  {
+    "id": "01GWEWH2GRNKE7GE9CJ7YA4ZXS",
+    "sentByID": 3,
+    "message":
+        "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+    "timestamp": "2022-09-19T01:47:35Z"
+  },
+  {
+    "id": "01GWEWH2GTZR2SE9XE7JBVFVS2",
+    "sentByID": 3,
+    "message":
+        "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+    "timestamp": "2023-01-05T11:43:00Z"
+  },
+  {
+    "id": "01GWEWH2GVSAT8AZSN00ZQBBF5",
+    "sentByID": 5,
+    "message":
+        "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "timestamp": "2023-03-09T12:45:42Z"
+  },
+  {
+    "id": "01GWEWH2GXZH2773SHFH01S7DR",
+    "sentByID": 3,
+    "message":
+        "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+    "timestamp": "2022-10-29T02:51:11Z"
+  },
+  {
+    "id": "01GWEWH2GYAM2QXCSGDGHKBE8T",
+    "sentByID": 5,
+    "message":
+        "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+    "timestamp": "2022-12-28T20:37:08Z"
+  },
+  {
+    "id": "01GWEWH2H0422W51HARNXCDRB8",
+    "sentByID": 3,
+    "message":
+        "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
+    "timestamp": "2022-09-02T07:28:00Z"
+  },
+  {
+    "id": "01GWEWH2H18HJQNCVSMWX0C5XK",
+    "sentByID": 5,
+    "message":
+        "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+    "timestamp": "2022-09-18T13:41:40Z"
+  },
+  {
+    "id": "01GWEWH2H322BV5CT6AYE3KSEK",
+    "sentByID": 5,
+    "message":
+        "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+    "timestamp": "2023-01-27T01:03:27Z"
+  },
+  {
+    "id": "01GWEWH2H4SKQ9K2QHW9REAXQ6",
+    "sentByID": 5,
+    "message": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+    "timestamp": "2022-03-26T19:36:26Z"
+  },
+  {
+    "id": "01GWEWH2H666P9CAS7NHE526FX",
+    "sentByID": 3,
+    "message":
+        "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+    "timestamp": "2022-10-08T11:32:09Z"
+  },
+  {
+    "id": "01GWEWH2H7V662AXVHR45CQF8Q",
+    "sentByID": 3,
+    "message":
+        "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+    "timestamp": "2022-08-27T19:18:20Z"
+  },
+  {
+    "id": "01GWEWH2H9BDZXAC8A8X1GEBFT",
+    "sentByID": 5,
+    "message":
+        "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
+    "timestamp": "2022-04-26T01:11:50Z"
+  },
+  {
+    "id": "01GWEWH2HAR8TQBAN3DN5A0GKC",
+    "sentByID": 3,
+    "message":
+        "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+    "timestamp": "2022-10-31T23:49:00Z"
+  },
+  {
+    "id": "01GWEWH2HCF3W1N6B6S8CPF273",
+    "sentByID": 3,
+    "message":
+        "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
+    "timestamp": "2022-05-28T23:37:58Z"
+  },
+  {
+    "id": "01GWEWH2HDMNE5YW5FQ8TNZJWT",
+    "sentByID": 3,
+    "message":
+        "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+    "timestamp": "2023-03-21T20:44:18Z"
+  },
+  {
+    "id": "01GWEWH2HFY0S0K39R29J3SN74",
+    "sentByID": 3,
+    "message":
+        "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
+    "timestamp": "2022-09-01T12:52:15Z"
+  },
+  {
+    "id": "01GWEWH2HGVGDKMCMWFHGDSKRC",
+    "sentByID": 5,
+    "message":
+        "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+    "timestamp": "2023-01-21T08:33:42Z"
+  }
+];

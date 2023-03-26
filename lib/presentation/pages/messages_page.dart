@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:gfghackathon_app/data/mock/mock_data.dart';
 import 'package:gfghackathon_app/data/models/chatroom_model.dart';
+import 'package:gfghackathon_app/data/models/message_model.dart';
+import 'package:gfghackathon_app/presentation/components/loading.dart';
+import 'package:gfghackathon_app/presentation/components/message_bubble.dart';
 import 'package:gfghackathon_app/utils/app_colors.dart';
 
 class MessagesPage extends StatelessWidget {
@@ -62,7 +66,30 @@ class MessagesPage extends StatelessWidget {
         children: [
           Expanded(
             // list of messages
-            child: Container(),
+            child: FutureBuilder(
+              future: Future.delayed(Duration.zero, () {
+                return chatsData.map((e) => MessageModel.fromMap(e)).toList();
+              }),
+              builder: (context, snapshot) {
+                if (snapshot.hasData) {
+                  return Padding(
+                    padding: const EdgeInsets.all(4.0),
+                    child: ListView.builder(
+                      itemCount: snapshot.data!.length,
+                      shrinkWrap: true,
+                      reverse: true,
+                      physics: const BouncingScrollPhysics(),
+                      itemBuilder: (context, index) => Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                        child: MessageBubble(snapshot.data![index]),
+                      ),
+                    ),
+                  );
+                } else {
+                  return const LoadingWidget();
+                }
+              },
+            ),
           ),
           Container(
             decoration: const BoxDecoration(
@@ -110,4 +137,3 @@ class MessagesPage extends StatelessWidget {
     );
   }
 }
-
