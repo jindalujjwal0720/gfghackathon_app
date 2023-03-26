@@ -6,13 +6,11 @@ import 'package:intl/intl.dart';
 
 class AppointmentListTile extends StatelessWidget {
   const AppointmentListTile(this.appointment, this.doctor,
-      {this.backgroundColor = Colors.white,
-      this.showOptions = true,
-      super.key});
+      {this.showOptions = true, this.invert = false, super.key});
   final AppointmentModel appointment;
   final DoctorModel doctor;
-  final Color backgroundColor;
   final bool showOptions;
+  final bool invert;
 
   @override
   Widget build(BuildContext context) {
@@ -20,16 +18,56 @@ class AppointmentListTile extends StatelessWidget {
       margin: const EdgeInsets.all(8.0),
       padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 20.0),
       decoration: BoxDecoration(
-        color: backgroundColor,
+        color: invert ? AppColors.darkblue : AppColors.componentsBackground,
         borderRadius: BorderRadius.circular(16.0),
-        boxShadow: const [
-          BoxShadow(
-            offset: Offset(0, 3),
-            spreadRadius: -2,
-            blurRadius: 16,
-            color: Color.fromRGBO(210, 229, 255, 1),
-          )
-        ],
+        // outer shadow
+        boxShadow: invert
+            ? [
+                const BoxShadow(
+                  color: Color.fromARGB(255, 173, 188, 248),
+                  offset: Offset(4, 4),
+                  blurRadius: 15,
+                  spreadRadius: 1,
+                ),
+                const BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-4, -4),
+                  blurRadius: 15,
+                  spreadRadius: 1,
+                ),
+              ]
+            : [
+                const BoxShadow(
+                  color: Color.fromARGB(255, 255, 255, 255),
+                  offset: Offset(4, 4),
+                  blurRadius: 15,
+                  spreadRadius: 1,
+                ),
+                const BoxShadow(
+                  color: Color.fromARGB(255, 255, 255, 255),
+                  offset: Offset(-4, -4),
+                  blurRadius: 15,
+                  spreadRadius: 1,
+                ),
+              ],
+        // inner shadow
+        gradient: invert
+            ? const LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  AppColors.darkblue,
+                  Color.fromARGB(255, 76, 98, 186),
+                ],
+              )
+            : const LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Color.fromARGB(255, 246, 248, 255),
+                  Color.fromARGB(255, 244, 247, 254),
+                ],
+              ),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,10 +93,10 @@ class AppointmentListTile extends StatelessWidget {
                       vertical: 8.0, horizontal: 2.0),
                   child: Text(
                     "Dr. ${doctor.name}",
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 20.0,
                       fontWeight: FontWeight.w500,
-                      color: AppColors.black,
+                      color: invert ? AppColors.white : AppColors.black,
                     ),
                   ),
                 ),
@@ -66,17 +104,22 @@ class AppointmentListTile extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 8.0, left: 2.0),
                   child: Text(
                     doctor.speciality,
-                    style: const TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w500,
-                      color: AppColors.grey,
+                    style: TextStyle(
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.w400,
+                      color: invert
+                          ? const Color.fromARGB(255, 212, 212, 254)
+                          : AppColors.grey,
                     ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10.0),
                   child: dateTimeRowWidget(
-                      appointment.startTime, appointment.duration),
+                    appointment.startTime,
+                    appointment.duration,
+                    invert: invert,
+                  ),
                 ),
                 if (showOptions)
                   Padding(
@@ -136,40 +179,46 @@ class AppointmentListTile extends StatelessWidget {
   }
 }
 
-Widget dateTimeRowWidget(timestamp, duration) {
+Widget dateTimeRowWidget(timestamp, duration, {invert = false}) {
   DateTime datetime = DateTime.fromMillisecondsSinceEpoch(int.parse(timestamp));
   return Container(
     padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
     decoration: BoxDecoration(
-      color: AppColors.backgroundMedium,
+      color: invert
+          ? const Color.fromARGB(66, 11, 35, 84)
+          : const Color.fromARGB(255, 223, 232, 253),
       borderRadius: BorderRadius.circular(16.0),
     ),
     child: FittedBox(
       child: Row(
         children: [
-          const Icon(
+          Icon(
             Icons.calendar_month_outlined,
             size: 17.0,
+            color: invert ? AppColors.white : AppColors.black,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 6.0, right: 8.0),
             child: Text(
               DateFormat("dd MMM yyyy").format(datetime),
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 13.0,
+                color: invert ? AppColors.white : AppColors.black,
               ),
             ),
           ),
-          const Icon(
+          Icon(
             Icons.watch_later_outlined,
             size: 16.0,
+            color: invert ? AppColors.white : AppColors.black,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 6.0),
             child: Text(
               DateFormat("jm").format(datetime),
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 13.0,
+                color: invert ? AppColors.white : AppColors.black,
               ),
             ),
           ),

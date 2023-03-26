@@ -61,7 +61,7 @@ class _MainPageState extends State<MainPage> {
         ],
         currentIndex: _selectedIndex,
         onTap: _onTapItem,
-        selectedItemColor: AppColors.black,
+        selectedItemColor: const Color.fromARGB(255, 64, 91, 200),
         unselectedItemColor: AppColors.grey,
       ),
     );

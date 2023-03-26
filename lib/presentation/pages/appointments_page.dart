@@ -40,6 +40,7 @@ class AppointmentsPage extends StatelessWidget {
           ],
         ),
       ),
+      backgroundColor: AppColors.background,
       body: const SingleChildScrollView(
         physics: BouncingScrollPhysics(),
         child: Column(

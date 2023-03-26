@@ -15,3 +15,12 @@ Future<List<dynamic>> getAppointmentData() async {
   }
   return [appointmentList, doctorsMap];
 }
+
+Future<List<dynamic>> getTodaysAppointment() async {
+  // returning mock data for now
+  await Future.delayed(const Duration(milliseconds: 1000));
+  AppointmentModel appointment = AppointmentModel.fromMap(appointmentsData[0]);
+  DoctorModel doctor = DoctorModel.fromMap(doctorsData
+      .firstWhere((element) => '${element["id"]}' == appointment.doctorID));
+  return [appointment, doctor];
+}

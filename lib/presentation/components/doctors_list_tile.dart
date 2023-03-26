@@ -13,14 +13,6 @@ class DoctorsListTile extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12.0),
-        boxShadow: const [
-          BoxShadow(
-            offset: Offset(0, 3),
-            spreadRadius: -4,
-            blurRadius: 6,
-            color: Color.fromRGBO(210, 229, 255, 1),
-          )
-        ],
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
