@@ -16,6 +16,9 @@ class DoctorModel extends Equatable {
   final String phoneNumber;
   final String birthdate;
   final num numberOfReviews;
+  final String address;
+  final String about;
+  final num experience;
   const DoctorModel({
     required this.id,
     required this.name,
@@ -29,6 +32,9 @@ class DoctorModel extends Equatable {
     required this.phoneNumber,
     required this.birthdate,
     required this.numberOfReviews,
+    required this.address,
+    required this.about,
+    required this.experience,
   });
 
   @override
@@ -46,6 +52,9 @@ class DoctorModel extends Equatable {
       phoneNumber,
       birthdate,
       numberOfReviews,
+      address,
+      about,
+      experience,
     ];
   }
 
@@ -62,6 +71,9 @@ class DoctorModel extends Equatable {
     String? phoneNumber,
     String? birthdate,
     num? numberOfReviews,
+    String? address,
+    String? about,
+    num? experience,
   }) {
     return DoctorModel(
       id: id ?? this.id,
@@ -76,6 +88,9 @@ class DoctorModel extends Equatable {
       phoneNumber: phoneNumber ?? this.phoneNumber,
       birthdate: birthdate ?? this.birthdate,
       numberOfReviews: numberOfReviews ?? this.numberOfReviews,
+      address: address ?? this.address,
+      about: about ?? this.about,
+      experience: experience ?? this.experience,
     );
   }
 
@@ -93,12 +108,15 @@ class DoctorModel extends Equatable {
       'phoneNumber': phoneNumber,
       'birthdate': birthdate,
       'numberOfReviews': numberOfReviews,
+      'address': address,
+      'about': about,
+      'experience': experience,
     };
   }
 
   factory DoctorModel.fromMap(Map<String, dynamic> map) {
     return DoctorModel(
-      id: "${map['id']}",
+      id: '${map['id']}',
       name: map['name'] as String,
       speciality: map['speciality'] as String,
       workingArea: map['workingArea'] as String,
@@ -110,6 +128,9 @@ class DoctorModel extends Equatable {
       phoneNumber: map['phoneNumber'] as String,
       birthdate: map['birthdate'] as String,
       numberOfReviews: map['numberOfReviews'] as num,
+      address: map['address'] as String,
+      about: map['about'] as String,
+      experience: map['experience'] as num,
     );
   }
 

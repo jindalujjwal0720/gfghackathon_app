@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gfghackathon_app/presentation/pages/appointments_page.dart';
 import 'package:gfghackathon_app/presentation/pages/chats_page.dart';
+import 'package:gfghackathon_app/presentation/pages/doctor_profile_page.dart';
 import 'package:gfghackathon_app/presentation/pages/homepage.dart';
 import 'package:gfghackathon_app/utils/app_colors.dart';
 
